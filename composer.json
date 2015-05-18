@@ -1,0 +1,29 @@
+{
+    "name": "PMChat",
+    "description": "This is the server side of a private messaging app which uses RESTful api/ Json to interact with client side.",
+    "authors": [
+        {
+            "name": "Breno Boueri",
+            "email": "breno601@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "slim/slim": "2.*",
+        "slim/extras": "*",
+        "slim/middleware": "*",
+        "illuminate/database": "4.2.16",
+        "monolog/monolog": ">=1.6.0",
+        "flynsarmy/slim-monolog": "1.0.0",
+        "league/oauth2-server": ">=4.1.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "API": "lib/"
+        },
+        "files": [
+        ],
+        "classmap": [
+        ]
+    }
+}
