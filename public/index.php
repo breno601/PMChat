@@ -7,6 +7,12 @@ $app->group('/oauth', function() use ($app, $log) {
     $app->post('/token', '\API\Auth\AccessTokenOAuth:AccessToken');
 });
 
+$app->options('/(:x+)', function() use ($app) {
+    //...return correct headers for cross domain / options request
+    $app->response->setStatus(200);
+});
+
+
 // Public
 $app->get(
     '/',
