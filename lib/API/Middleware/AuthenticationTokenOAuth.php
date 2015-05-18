@@ -26,7 +26,9 @@ class AuthenticationTokenOAuth extends \Slim\Middleware {
         try {
             $isRequestNewToken = (bool) preg_match('/\/oauth\/token$/', $this->app->request->getPath());
             if (!$isRequestNewToken) {
-                $this->server->isValidRequest(false);
+			     if(!$this->app->request->isOptions()) {  // this is to avoid cross domain issues
+                    $this->server->isValidRequest(false);
+                 }
             }
             $this->next->call();
         } catch(\League\OAuth2\Server\Exception\OAuthException $e) {

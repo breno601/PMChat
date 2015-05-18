@@ -15,7 +15,8 @@
         "illuminate/database": "4.2.16",
         "monolog/monolog": ">=1.6.0",
         "flynsarmy/slim-monolog": "1.0.0",
-        "league/oauth2-server": ">=4.1.1"
+        "league/oauth2-server": ">=4.1.1",
+        "ircmaxell/password-compat": "dev-master"
     },
     "autoload": {
         "psr-0": {
