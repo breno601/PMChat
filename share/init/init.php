@@ -137,8 +137,8 @@ Capsule::table('messages')->insert([
 Capsule::table('messages')->insert([
     'from_id'  =>  '2',
     'to_id'  =>  '1',
-    'title'  =>  'Title of message',
-    'message'      =>  'This is a test to see whether the component is working!',
+    'title'  =>  'Hi there!',
+    'message'      =>  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis tellus eu congue sodales. Fusce at sem hendrerit nibh viverra porta volutpat ac sem. Donec elementum tristique pharetra. Quisque ullamcorper viverra nulla sit amet hendrerit. Nam et pellentesque nisi.',
     "created_at" => "2015-05-14 21:52:36",
     "updated_at" => "2015-05-14 21:52:36"
 ]);
