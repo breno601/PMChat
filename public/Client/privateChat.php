@@ -14,7 +14,7 @@ if(!isset($_POST['username']) || !isset($_POST['token'])){
     $_SESSION['token']= $_POST['token'];
 
     // This is just a setup to get the id from the given username
-    $ch = curl_init('http://localhost/BunqChat/public/api/v1/users/'.$_SESSION['username']);
+    $ch = curl_init('http://localhost/PMChat/public/api/v1/users/'.$_SESSION['username']);
     curl_setopt_array($ch, array(
         CURLOPT_RETURNTRANSFER => TRUE,
         CURLOPT_RETURNTRANSFER => TRUE,

@@ -1,7 +1,7 @@
 function loadUsers() {
     $.ajax({
         type: "GET",
-        url: "http://localhost/BunqChat/public/api/v1/messages/"+userid,
+        url: "http://localhost/PMChat/public/api/v1/messages/"+userid,
         dataType: "json",
         beforeSend: function(xhr) {
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -39,7 +39,7 @@ $(document).on("click", "#nameRow", function(e) {
     var username = $(this).find('#name').val();
     $.ajax({
         type: "GET",
-        url: "http://localhost/BunqChat/public/api/v1/messages/"+$(this).find('#to_id').val()+"/to/"+userid,
+        url: "http://localhost/PMChat/public/api/v1/messages/"+$(this).find('#to_id').val()+"/to/"+userid,
         dataType: "json",
         beforeSend: function(xhr) {
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -119,7 +119,7 @@ $(document).on("submit", "#message", function(e) {
         }
     $.ajax({
         type: "POST",
-        url: "http://localhost/BunqChat/public/api/v1/messages/",
+        url: "http://localhost/PMChat/public/api/v1/messages/",
         dataType: "json",
         data: JSON.stringify(sendInfo),
         beforeSend: function(xhr) {
@@ -196,7 +196,7 @@ $(document).on("submit", "#users", function(e) {
     }
     $.ajax({
         type: "POST",
-        url: "http://localhost/BunqChat/public/api/v1/users/",
+        url: "http://localhost/PMChat/public/api/v1/users/",
         dataType: "json",
         data: JSON.stringify(sendInfo),
         beforeSend: function(xhr) {

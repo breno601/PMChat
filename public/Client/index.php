@@ -48,7 +48,7 @@
             var form = $(this);
             $.ajax({
                 type: "POST",
-                url: "http://localhost/BunqChat/public/oauth/token",
+                url: "http://localhost/PMChat/public/oauth/token",
                 dataType: "json",
                 data: {
                     "grant_type": "password",
