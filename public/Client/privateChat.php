@@ -1,7 +1,7 @@
 <?php
 if(!isset($_POST['username']) || !isset($_POST['token'])){
     header('Location: index.php');
-}else if(isset($_POST['argument']) && $_POST['argument'] == 'logOut' && !empty( session_id())) {
+}else if(isset($_POST['argument']) && $_POST['argument'] == 'logOut') {
 
     session_destroy();
     $_SESSION = array();
